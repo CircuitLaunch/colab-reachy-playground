@@ -15,7 +15,7 @@ services:
             - 7189:3389
             - 7183:1883
         volumes:
-            - ..:/home/reachy/colab-reachy-playground
+            - ../..:/home/reachy/colab-repos
         user: reachy
         working_dir: /home/reachy
         stdin_open: true
