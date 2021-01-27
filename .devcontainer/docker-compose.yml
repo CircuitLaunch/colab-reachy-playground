@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    reachy-docker:
+        build:
+          context: .
+        container_name: reachy-docker
+        ports:
+            - 8888:8888
+            - 8889:8889
+            - 8890:8890
+            - 9000:9000
+            - 6171:6171
+            - 843:843
+            - 7189:3389
+            - 7183:1883
+        volumes:
+            - ..:/home/reachy/colab-reachy-playground
+        user: reachy
+        working_dir: /home/reachy
+        stdin_open: true
+        tty: true
