@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install wget screen bzip2 curl -y
 RUN apt-get install libpulse-dev libasound2-dev pavucontrol -y
-RUN apt-get install -y git
+RUN apt-get install -y git git-lfs
 
 RUN groupadd reachy
 RUN useradd --create-home --shell /bin/bash reachy --gid reachy
